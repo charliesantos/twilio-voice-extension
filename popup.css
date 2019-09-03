@@ -1,0 +1,70 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(to right, #3b679e 0%,#2b88d9 50%,#207cca 100%,#7db9e8 100%,#207cca 101%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#token-url, #init-button {
+  font-size: 25px;
+  margin: 20px 20px 0px 20px;
+}
+
+#token-url {
+  width: calc(100% - 45px);
+}
+
+#init-button {
+  width: 200px;
+  border-radius: 0%;
+  margin-bottom: 20px;
+}
+
+#root {
+  width: 700px;
+  height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.device {
+  margin: 20px;
+  padding: 15px;
+}
+
+.device > input, .device > div {
+  margin: 5px;
+}
+
+.label {
+  color: rgba(32,28,41,.75);
+  font-size: 23px;
+}
+
+.textbox {
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.buttons > input {
+  border-radius: 0%;
+  width: 85px;
+  font-size: 20px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.log {
+  width: 600px;
+  background: rgba(32,28,41,.75);
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 10px;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.log > p {
+  margin: 0px 0px 17px 0px;
+}
