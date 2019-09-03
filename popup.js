@@ -1,5 +1,8 @@
 (function() {
 
+  let deviceView;
+  let deviceSetupEl;
+
   class DeviceView {
     constructor(tokenUrlEl) {
       this.tokenUrlEl = tokenUrlEl;
@@ -24,6 +27,9 @@
       this.device.on('ready', () => {
         this.log('INFO', 'Device ready');
         this.showHideButtons('Call');
+
+        deviceSetupEl.style.display = 'none';
+
         onReady && onReady(this);
       });
   
@@ -228,13 +234,20 @@
   }
 
   addEventListener('load', () => {
+    deviceSetupEl = document.getElementById('setup-device');
+    deviceSetupEl.onclick = () => {
+      if (deviceView) {
+        deviceView.setupDevice();
+      }
+    };
+
     const tokenUrlEl = document.getElementById('token-url');
     getTextBoxValue('tokenUrl', (value) => {
       tokenUrlEl.value = value;
     });
     tokenUrlEl.onchange = () => saveTextBoxValue('tokenUrl', tokenUrlEl.value);
 
-    const deviceView = new DeviceView(tokenUrlEl);
+    deviceView = new DeviceView(tokenUrlEl);
     root.appendChild(deviceView.render());
 
     deviceView.showHideButtons('Call');

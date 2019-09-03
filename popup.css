@@ -5,6 +5,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#setup-device {
+  border-radius: 0%;
+  font-size: 20px;
+  margin: 20px 0px 0px 20px;
+  width: 200px;
+}
+
 #token-url, #init-button {
   font-size: 25px;
   margin: 20px 20px 0px 20px;
