@@ -6,12 +6,12 @@ Testing twilio-client.js as a chrome extension
 
 ## Installation
 1. Clone this repository.
-2. Install to chrome per instructions outlined here https://developer.chrome.com/extensions/getstarted
+2. Install to chrome browser per instructions outlined here https://developer.chrome.com/extensions/getstarted
 
 ## Getting Tokens
-This extension requires a token url (as shown in the above UI). This url should be a `GET` REST API which returns your token and identity. This token will be use to initialize the `Device` object.
+This extension requires a token url (as shown in the above UI). This url should be a `GET` REST API which returns your token and identity. This token will be used to initialize the `Device` object.
 
-Example:
+Example Response from the url:
 ```
   {
     "token": "eyJhbGciOiJIUz....",
