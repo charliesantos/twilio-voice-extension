@@ -1,6 +1,6 @@
 # twilio-voice-extension
 
-Testing twilio-client.js as a chrome extension
+Testing twilio-client.js as a chrome extension. This is for my personal testing only. Please use only use this as a reference.
 
 ![Example UI](UI.png)
 
